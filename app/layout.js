@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 import { UserProvider } from "@/context/UserContext";
 import { AuthProvider } from "@/context/AuthContext";
 import { FavoriteProvider } from "@/context/FavoriteContext";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
               </main>
 
               <Footer />
+              <ChatWidget />
             </FavoriteProvider>
           </AuthProvider>
         </UserProvider>
